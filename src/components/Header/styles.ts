@@ -21,10 +21,18 @@ export const Container = styled.div<ContainerProps>`
         color: #fff;
         text-decoration: none;
         font-size: 16px;
+        opacity: 0.6;
         transition: opacity 0.2s;
+        padding-bottom: 10px;
+        border-bottom: 2px solid transparent;
 
         & + a {
           margin-left: 32px;
+        }
+
+        &.active {
+          border-color: #ff872c;
+          opacity: 1;
         }
 
         &:hover {
